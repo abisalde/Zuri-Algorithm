@@ -1,15 +1,14 @@
 const checkYuGiOh = (n) => {
     var n;
+
+    // if statements to verify the values passed into the _CheckYuGiOh_ is valid
     if (isNaN(n) === true) {
         if (Array.isArray(n) === true) {
-            console.log('invalid parameter: ' + JSON.stringify(n));
-            return n;
+            return 'invalid parameter: ' + JSON.stringify(n);
         } else if (typeof n === 'object') {
-            console.log('invalid parameter: ' + JSON.stringify(n));
-            return n;
+            return 'invalid parameter: ' + JSON.stringify(n);
         } else {
-            console.log('invalid parameter: ' + JSON.stringify(n));
-            return n;
+            return 'invalid parameter: ' + JSON.stringify(n);
         }
     } else {
         let value;
@@ -49,3 +48,4 @@ console.log(checkYuGiOh(10));
 console.log(checkYuGiOh('5'));
 console.log(checkYuGiOh('fizzbuzz is meh'));
 console.log(checkYuGiOh(20));
+console.log(checkYuGiOh(30));
