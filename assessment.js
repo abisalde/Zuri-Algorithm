@@ -40,7 +40,9 @@ const checkYuGiOh = (n) => {
             let newArrr = [];
             for (k = 1; k <= params; k++) {
                 if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
-                    newArrr.push;
+                    newArrr.push('yu-gi-oh');
+                } else if (i % 2 === 0 && i % 3 === 0) {
+                    newArrr.push('yu-gi');
                 }
             }
         }
